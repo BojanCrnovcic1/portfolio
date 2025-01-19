@@ -1,0 +1,188 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 3rem;
+    height: 100vh;
+  
+    .about-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-out;
+  
+      .profile-pic {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #f39c12;
+        margin-right: 3rem;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      .about-text {
+        max-width: 600px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        opacity: 0;
+        animation: fadeInText 1.5s ease-out 1s forwards;
+  
+        h2 {
+          font-size: 2.5rem;
+          font-weight: 600;
+          color: #f39c12;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          color: #dcdcdc;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  
+    .about-links {
+      text-align: center;
+      animation: fadeInLinks 2s ease-out 1.5s forwards;
+  
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+  
+        li {
+          a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            transition: transform 0.3s ease, color 0.3s ease;
+  
+            &:hover {
+              transform: scale(1.1);
+              color: #f39c12;
+            }
+  
+            &:before {
+              content: '';
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #f39c12;
+              transform: scaleX(0);
+              transition: transform 0.3s ease;
+            }
+  
+            &:hover::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes fadeInLinks {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 2rem;
+  
+      .about-header {
+        flex-direction: column;
+        text-align: center;
+        .profile-pic {
+          margin-right: 0;
+          margin-bottom: 1rem;
+          width: 200px;
+          height: 200px;
+        }
+        .about-text {
+          max-width: 90%;
+          margin-top: 1.5rem;
+        }
+      }
+  
+      .about-links {
+        margin-top: 2rem;
+        ul {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 1.5rem;
+  
+      .about-header .profile-pic {
+        width: 180px;
+        height: 180px;
+      }
+  
+      .about-header .about-text {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+  
+      .about-links p {
+        font-size: 1.2rem;
+      }
+  
+      .about-links ul {
+        gap: 0.5rem;
+      }
+    }
+  }
+  
