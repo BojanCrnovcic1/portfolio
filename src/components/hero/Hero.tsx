@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="hero" id="hero">
       <div className="hero-content">
         <h1>
-          Hi, I'm <span className="highlight">Bojan Crnovcic</span> .
+          Hi, I'm <span className="highlight">Bojan Crnovcic</span> 
         </h1>
         <h2>Full-Stack Developer | UI/UX Designer</h2>
         <p>
