@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/restaurant.png",
+        "name": "Restaurant",
+        "description": "Web app for restaurant, menu viewing and food ordering.",
+        "technologies": ["React", "Nest.js", "Postgras"],
+        "liveLink": "https://restaurant69.vercel.app",
+        "gitBackendCode": "https://github.com/BojanCrnovcic1/restaurant-backend",
+        "gitFrontedCode": "https://github.com/BojanCrnovcic1/restaurant-frontend"
+    },
+    {
+        "id": 2,
+        "image": "/assets/chat.png",
+        "name": "Chat",
+        "description": "Web chat application.",
+        "technologies": ["React", "Nest.js"],
+        "liveLink": "NoLiveLink",
+        "gitBackendCode": "https://github.com/BojanCrnovcic1/Chat-Backend",
+        "gitFrontedCode": "https://github.com/BojanCrnovcic1/chat-frontend"
+    },
+    {
+        "id": 3,
+        "image":"/assets/portfolio.png",
+        "name": "Portfolio",
+        "description": "My personal portfolio.",
+        "technologies": ["React"],
+        "liveLink": "no",
+        "gitBackendCode": "",
+        "gitFrontedCode": ""
+    }
+]
