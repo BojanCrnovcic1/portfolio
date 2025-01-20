@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Project } from "../../types/Projects";
+import { Project } from "../../types/Projects.ts";
 import projectsData from "../../data/projects.json";
-import "./Projects.scss";
+import "./projects.scss";
 
 const Projects: React.FC = () => {
     const [isScrollable, setIsScrollable] = useState<boolean>(false);
