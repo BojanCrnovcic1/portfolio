@@ -179,6 +179,156 @@
     }
   }
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; // Puni ekran
+    padding: 2rem;
+    background: linear-gradient(135deg, #a8edea, #fed6e3); // Suptilna pozadinska boja
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+      color: #444;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: 400px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease-in-out;
+  
+      label {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #666;
+        font-weight: bold;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s ease;
+  
+        &:focus {
+          border-color: #6c63ff;
+          box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+        }
+      }
+  
+      textarea {
+        resize: none;
+        height: 100px;
+      }
+  
+      button {
+        padding: 0.8rem 2rem;
+        background: #6c63ff;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+  
+        &:hover {
+          background: #574bff;
+          transform: scale(1.05);
+        }
+  
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+  
+    .status-message {
+      margin-top: 1rem;
+      font-size: 1rem;
+      text-align: center;
+      color: #444;
+      animation: fadeIn 1s ease;
+    }
+  
+    // Responsivnost za mobilne uređaje
+    @media (max-width: 768px) {
+      padding: 1rem;
+  
+      h2 {
+        font-size: 2rem;
+      }
+  
+      form {
+        padding: 1.5rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.8rem;
+      }
+  
+      form {
+        padding: 1rem;
+      }
+  
+      button {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  // Animacije
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
   {
     I specialize in building complete web applications, from the front-end to the back-end. 
           Whether it's creating stunning user interfaces or developing robust server-side solutions, 
