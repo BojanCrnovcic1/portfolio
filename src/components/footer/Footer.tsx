@@ -13,7 +13,6 @@ const FiverrIcon = () => (
 );
 
 const Footer = () => {
-  console.log(import.meta.env);
 
   return (
     <footer className="footer">
