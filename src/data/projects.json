@@ -18,15 +18,5 @@
         "liveLink": "NoLiveLink",
         "gitBackendCode": "https://github.com/BojanCrnovcic1/Chat-Backend",
         "gitFrontedCode": "https://github.com/BojanCrnovcic1/chat-frontend"
-    },
-    {
-        "id": 3,
-        "image":"/assets/portfolio.png",
-        "name": "Portfolio",
-        "description": "My personal portfolio.",
-        "technologies": ["React"],
-        "liveLink": "no",
-        "gitBackendCode": "",
-        "gitFrontedCode": ""
     }
 ]

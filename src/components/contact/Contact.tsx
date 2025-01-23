@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
       .then(
         () => {
           setStatusMessage("Message sent successfully!");
-          setFormData({ name: "", emailId: "", message: "" });
+          setFormData({ name: "", emailId: "", message: ""});
         },
         (error) => {
           console.error(error);

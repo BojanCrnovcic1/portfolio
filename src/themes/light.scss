@@ -1,0 +1,279 @@
+html.light {
+    
+    background: linear-gradient(135deg, #a8edea, #ecd8df);
+
+    .header {
+        background: linear-gradient(135deg, rgba(168, 237, 234, 0.9), rgba(236, 216, 223, 0.9));
+        color: #1d3557;
+
+        .logo {
+            &:hover {
+                color: #219ebc;
+                text-shadow: 2px 2px 4px rgba(91, 87, 87, 0.6);
+            }
+        }
+
+        .menu-toggle {
+            color: #1d3557;
+            &:hover {
+                color: #219ebc;
+            }
+        }
+
+        .navbar {
+            ul {
+                li {
+                    a {
+                        color: #1d3557;
+                        &:hover {
+                            color: #219ebc;
+                        }
+                    }
+                }
+            }
+        }
+
+        .theme-toggle {
+            border: 2px solid #219ebc;
+            color: #1d3557;
+        
+            &:hover {
+                background-color: #219ebc;
+                color: #fff;
+                box-shadow: 0 0 10px rgba(18, 127, 243, 0.8);
+            }
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 10px rgba(18, 127, 243, 0.8);
+            }
+        }
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #a8edea, #ecd8df);
+        color: #1d3557;
+
+        .hero-content {
+            h1 {
+                .highlight  {
+                    background: linear-gradient(90deg, #003f88, #219ebc);;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                     animation: gloww 3s infinite alternate;
+                }
+            }
+
+            p {
+                color: #213858
+            }
+
+            .hero-buttons {
+                .btn {
+                    &.primary {
+                        background-color: #3498db;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #2980b9;
+                            box-shadow: 0px 10px 20px rgba(52, 152, 219, 0.4);
+                         }
+                    }
+
+                    &.secondary {                     
+                        color: #1d3557;
+                        border: 2px solid #3498db;
+              
+                        &:hover {
+                          background-color: #3498db;
+                          color: #fff;
+                          transform: scale(1.1);
+                        }
+                    }
+                    &.tertiary {
+                        background: linear-gradient(135deg, #A7FF83, #17B978);
+                        color: #fff;
+              
+                        &:hover {
+                          transform: scale(1.1);
+                          box-shadow: 0px 10px 20px rgba(70, 243, 18, 0.4);
+                        }
+                    }
+                }
+                
+            }
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+              linear-gradient(to right, rgba(208, 204, 204, 0.5) 2px, transparent 2px),
+              linear-gradient(to bottom, rgba(217, 214, 214, 0.5) 2px, transparent 2px);
+            background-size: 150px 150px; 
+            z-index: 0;
+          }
+
+        @keyframes gloww {
+            0% {
+              text-shadow: 0 0 2px #003f88, 0 0 5px #00509d;
+            }
+            100% {
+              text-shadow: 0 0 5px #1d2591, 0 0 15px #62b6cb;
+            }
+        }
+    }
+
+    .about {
+        background: linear-gradient(135deg, #a8edea, #ecd8df);
+        color: #1d3557;
+
+        .about-header {
+            .profile-pic {
+                border: 5px solid #00296b;
+            }
+        }
+
+        .about-text {
+            h2 {
+                color: #00296b;
+            }
+            p {
+                color: #213858
+            }
+        }
+
+        .about-links {
+            ul {
+                li {
+                    a {
+                        color: #1d3557;
+
+                        &:hover {
+                            color:#219ebc;
+                        }
+
+                        &:before {
+                            background-color: #219ebc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .projects-section {
+        background: linear-gradient(135deg, #a8edea, #ecd8df);
+        color: #1d3557;
+
+        .projects-title {
+            color: #00296b;
+        }
+
+        .projects-container {
+            scrollbar-color: #219ebc #f7f8f4;
+        }
+
+        .project-card {
+            background-color: #a8edea;
+
+            .project-content {
+                .project-name {
+                    color: #00296b;
+                }
+
+                .technologies {
+                    .technology-tag {
+                        background-color: #00296b;
+                        color: #fff;
+                    }
+                }
+
+                .project-links {
+                    .project-link {
+                        background-color: #00296b;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #00509d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        background: linear-gradient(135deg, #a8edea, #ecd8df);
+        color: #1d3557;
+
+        h2 {
+            color: #00296b;
+        }
+
+        form {
+            background: rgba(52, 152, 219, 0.7);
+
+            label {
+                color: #00296b;
+            }
+            input,
+            textarea {
+                background:#b2ece9;
+                color: #333;
+
+                &:focus {
+                    border-color: #00509d;
+                    box-shadow: 0 0 10px rgba(1, 57, 109, 0.5);
+                }
+            }
+
+            button {
+                background: linear-gradient(135deg, #A7FF83, #17B978);
+                color: #fff;
+
+                &:hover {
+                    background: linear-gradient(135deg, #17B978, #A7FF83);
+                }
+            }
+        }
+    }
+
+    .footer {
+        background: #7d7a7a;
+
+        .footer__container {
+            h4 {
+                color: #fff;
+                &:hover {
+                    color: #62b6cb;
+                }
+            }
+            p {
+                color: #fff;
+                &:hover {
+                    color: #62b6cb;
+                }
+            }
+            a {
+                color: #fff;
+                &:hover {
+                    color: #62b6cb;
+                }
+            }
+        }
+        .footer__copyright {
+            p {
+                color: #fff;
+                &:hover {
+                    color: #62b6cb;
+                }
+            }
+        }
+    }
+
+}

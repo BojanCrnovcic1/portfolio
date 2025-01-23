@@ -1,197 +1,195 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Roboto', sans-serif;
+  color: #f39c12;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+    color: #f39c12;
+  }
+
+  form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    align-items: stretch; 
+    width: 100%;
+    max-width: 400px;
+    background: rgba(30, 42, 56, 0.95);
     padding: 2rem;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    font-family: 'Roboto', sans-serif;
-    color: #f39c12;
-  
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      text-align: center;
-      animation: slideIn 1s ease-in-out;
-      color: #f39c12;
-    }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      max-width: 400px;
-      background: rgba(30, 42, 56, 0.95);
-      padding: 2rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      animation: fadeInScale 1s ease-in-out;
-  
-      label {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-        color: #f39c12;
-        font-weight: bold;
-        width: 100%;
-      }
-  
-      input,
-      textarea {
-        width: 100%;
-        padding: 0.8rem;
-        margin-bottom: 1.5rem;
-        border: 1px solid transparent;
-        border-radius: 0.8rem;
-        font-size: 1rem;
-        outline: none;
-        background: #2c3e50;
-        color: #fff;
-        transition: all 0.3s ease;
-  
-        &:focus {
-          border-color: #f39c12;
-          box-shadow: 0 0 8px rgba(255, 250, 99, 0.5);
-          transform: scale(1.02);
-        }
-      }
-  
-      textarea {
-        resize: none;
-        height: 120px;
-      }
-  
-      button {
-        width: 100%;
-        padding: 1rem 2rem;
-        background: linear-gradient(90deg, #f39c12, #e74c3c);
-        color: #fff;
-        font-size: 1rem;
-        font-weight: bold;
-        border: none;
-        border-radius: 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-  
-        &:hover {
-          background: linear-gradient(90deg, #e74c3c, #f39c12);
-          transform: translateY(-5px) scale(1.05);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-  
-        &:active {
-          transform: translateY(0);
-        }
-      }
-    }
-  
-    .status-message {
-      margin-top: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeInScale 1s ease-in-out;
+
+    label {
       font-size: 1rem;
-      text-align: center;
+      margin-bottom: 0.5rem;
       color: #f39c12;
-      animation: fadeIn 1s ease;
+      font-weight: bold;
+      width: 100%;
     }
-  
-    @media (max-width: 1024px) {
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid transparent;
+      border-radius: 0.8rem;
+      font-size: 1rem;
+      outline: none;
+      background: #2c3e50;
+      color: #fff;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+
+      &:focus {
+        border-color: #f39c12;
+        box-shadow: 0 0 8px rgba(255, 250, 99, 0.5);
+        transform: scale(1.02);
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: linear-gradient(90deg, #f39c12, #e74c3c);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: linear-gradient(90deg, #e74c3c, #f39c12);
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .status-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #f39c12;
+    animation: fadeIn 1s ease;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    form {
       padding: 1.5rem;
-  
-      h2 {
-        font-size: 2rem;
-      }
-  
-      form {
-        padding: 1.5rem;
-        max-width: 90%;
-        border-radius: 1rem;
-      }
-    }
-  
-    @media (max-width: 768px) {
-        h2 {
-          font-size: 1.8rem;
-        }
-      
-        form {
-          padding: 1.5rem;
-          max-width: 85%;
-          margin: 0 auto;
-        }
-      
-        input,
-        textarea {
-          font-size: 1rem;
-          padding: 0.6rem 0.8rem;
-          width: 100%;
-          box-sizing: border-box;
-        }
-      
-        textarea {
-          height: 8rem;
-        }
-      
-        button {
-          font-size: 1rem;
-          padding: 0.8rem 1.5rem;
-        }
-      }
-      
-  
-    @media (max-width: 480px) {
-        h2 {
-          font-size: 1.5rem;
-        }
-      
-        form {
-          padding: 0.8rem;
-          max-width: 95%;
-        }
-      
-        input,
-        textarea {
-          font-size: 0.85rem;
-          padding: 0.5rem;
-          width: 100%;
-          box-sizing: border-box; 
-        }
-      
-        button {
-          font-size: 0.8rem;
-          padding: 0.7rem 1.2rem;
-        }
-      }
-      
-  }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+      max-width: 90%;
+      border-radius: 1rem;
     }
   }
-  
-  @keyframes fadeInScale {
-    from {
-      opacity: 0;
-      transform: scale(0.8);
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
     }
-    to {
-      opacity: 1;
-      transform: scale(1);
+
+    form {
+      padding: 1.5rem;
+      max-width: 85%;
+      margin: 0 auto;
+    }
+
+    input,
+    textarea {
+      font-size: 1rem;
+      padding: 0.6rem 0.8rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 8rem;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
     }
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
     }
-    to {
-      opacity: 1;
+
+    form {
+      padding: 0.8rem;
+      max-width: 95%;
+    }
+
+    input,
+    textarea {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      font-size: 0.8rem;
+      padding: 0.7rem 1.2rem;
     }
   }
-  
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

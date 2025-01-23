@@ -2,6 +2,6 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  background-color: #FAFAFA;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
 }
 
