@@ -21,16 +21,16 @@ const Footer = () => {
           <p>Full-Stack Developer | UI/UX Designer</p>
         </div>
         <div className="footer__socials">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href={process.env.REACT_APP_FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
             <FaFacebookF className="social-icon" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href={process.env.REACT_APP_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
             <FaInstagram className="social-icon" />
           </a>
-          <a href="https://fiverr.com" target="_blank" rel="noopener noreferrer">
+          <a href={process.env.REACT_APP_FIVERR_URL} target="_blank" rel="noopener noreferrer">
             <FiverrIcon />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href={process.env.REACT_APP_LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn className="social-icon" />
           </a>
         </div>
