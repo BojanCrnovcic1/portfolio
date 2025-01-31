@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Project } from "../../types/Projects.ts";
+import { Project } from "../../types/Projects";
 import projectsData from "../../data/projects.json";
 import "./projects.scss";
 
