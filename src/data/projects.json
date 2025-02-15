@@ -11,6 +11,16 @@
     },
     {
         "id": 2,
+        "image": "/assets/quiz.png",
+        "name": "Quiz",
+        "description": "Quiz on country knowledge in Serbian",
+        "technologies": ["React", "Nest.js", "MySql"],
+        "liveLink": "NoLiveLink",
+        "gitBackendCode": "https://github.com/BojanCrnovcic1/country_quiz_backend",
+        "gitFrontedCode": "https://github.com/BojanCrnovcic1/quiz_client"
+    },
+    {
+        "id": 3,
         "image": "/assets/chat.png",
         "name": "Chat",
         "description": "Web chat application.",
@@ -20,7 +30,7 @@
         "gitFrontedCode": "https://github.com/BojanCrnovcic1/chat-frontend"
     },
     {
-        "id": 3,
+        "id": 4,
         "image":"/assets/portfolio.png",
         "name": "Portfolio",
         "description": "My personal portfolio.",
